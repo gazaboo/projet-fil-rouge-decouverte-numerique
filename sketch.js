@@ -21,7 +21,6 @@ function draw() {
     img.loadPixels();
     loadPixels();
     if (color_clicked != undefined){
-        print(color_clicked)
         for (let i = 0; i < w*h*4; i += 4) {
             let c = [pixels[i], pixels[i+1], pixels[i+2], pixels[i+3]];  
             let d = distance_color(color_clicked, c); 
